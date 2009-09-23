@@ -10,6 +10,9 @@
 // If wootoff, refresh every eight seconds. //
 //////////////////////////////////////////////
 woProgressBarDiv = document.getElementById("ctl00_ctl00_ContentPlaceHolderLeadIn_ContentPlaceHolderLeadIn_SaleControl_PanelWootOffProgressBar")
+if (!woProgressBarDiv) {
+  woProgressBarDiv = document.getElementById("ctl00_ctl00_ContentPlaceHolderLeadIn_ContentPlaceHolderLeadIn_SaleControl_PanelWootOff")
+}
 if (woProgressBarDiv) {
-  setTimeout("window.location.reload()",5000);
+  setTimeout("window.location.reload()", 8000);
 }
